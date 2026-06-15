@@ -1,0 +1,109 @@
+.habilidades,
+.experiencia,
+.formacao {
+  background-color: var(--cor-card);
+  padding: var(--espaco-xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--sombra-card);
+  margin-bottom: var(--espaco-lg);
+  border: 2px solid var(--cor-borda);
+}
+
+.habilidades h2,
+.experiencia h2,
+.formacao h2 {
+  font-size: var(--texto-2xl);
+  color: var(--cor-titulo);
+  margin-bottom: var(--espaco-md);
+  border-bottom: 2px solid var(--cor-fundo); 
+  padding-bottom: var(--espaco-xs);
+}
+
+.habilidades ul,
+.experiencia ul {
+  padding-left: var(--espaco-md);
+  color: var(--cor-texto-medio);
+}
+
+.habilidades li,
+.experiencia li {
+  margin-bottom: var(--espaco-sm);
+}
+
+.experiencia ul ul {
+  list-style-type: circle;
+  margin-top: 0.625rem;
+  padding-left: var(--espaco-md);
+}
+
+.experiencia ul ul li {
+  margin-bottom: var(--espaco-xs);
+}
+
+.experiencia p em {
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-base);
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+.experiencia strong {
+  color: var(--cor-texto);
+}
+
+.formacao-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.9375rem; 
+  text-align: left;
+}
+
+.formacao-table th {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  padding: 0.875rem 1rem; 
+  font-weight: 500;
+  font-size: var(--texto-base);
+}
+
+.formacao-table th:first-child { border-top-left-radius: var(--radius-md); }
+.formacao-table th:last-child  { border-top-right-radius: var(--radius-md); }
+
+.formacao-table td {
+  padding: 0.875rem 1rem; 
+  border-bottom: 1px solid var(--cor-borda); 
+  color: var(--cor-texto-medio);
+  font-size: var(--texto-base);
+}
+
+.formacao-table tbody tr:nth-child(even) {
+  background-color: var(--cor-fundo-input);
+}
+
+.status-cursando,
+.status-formada,
+.status-formado {
+  font-weight: 600;
+  font-size: var(--texto-sm);
+}
+
+.status-cursando {
+  color: var(--cor-status-cursando);
+}
+
+.status-formada,
+.status-formado {
+  color: var(--cor-status-formado);
+}
+
+@media (max-width: 48rem) {
+  .habilidades,
+  .experiencia,
+  .formacao {
+    padding: var(--espaco-lg) var(--espaco-md);
+  }
+
+  .formacao {
+    overflow-x: auto;
+  }
+}

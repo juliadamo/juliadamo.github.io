@@ -1,0 +1,87 @@
+.introducao {
+  padding: var(--espaco-2xl) 3.75rem; 
+}
+
+.introducao h2 {
+  font-size: 4.375rem; 
+  font-weight: bold;
+  margin-bottom: var(--espaco-md);
+  color: var(--cor-titulo);
+  display: flex;
+  justify-content: center;
+}
+
+.introducao p {
+  font-size: var(--texto-lg);
+  max-width: 75rem; 
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secao-posts {
+  margin-top: var(--espaco-2xl);
+  margin-bottom: var(--espaco-xl);
+  padding: var(--espaco-md);
+}
+
+.secao-posts h2 {
+  font-size: var(--texto-3xl);
+  color: var(--cor-titulo);
+  margin-bottom: 2.1875rem; 
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--espaco-md);
+  padding: 0;
+  margin-bottom: var(--espaco-xl);
+  align-items: stretch;
+}
+
+.secao-posts .card-post {
+  background: var(--cor-card);
+  padding: 2.1875rem; 
+  border-radius: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); 
+  width: 31.25rem; 
+  min-height: 23.75rem; 
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.secao-posts .card-post h3 {
+  font-size: var(--texto-xl);
+  margin-bottom: 0.9375rem; 
+  color: var(--cor-texto);
+}
+
+.secao-posts .card-post p {
+  font-size: var(--texto-lg);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.publicacao {
+  color: var(--cor-texto-muted);
+  margin-bottom: 0.625rem;
+}
+
+.secao-posts .card-post a {
+  display: inline-block;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: 0.9375rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.secao-posts .card-post a:hover {
+  color: var(--cor-primaria-escura);
+  text-decoration: underline;
+  transform: translateX(0.1875rem); 
+}

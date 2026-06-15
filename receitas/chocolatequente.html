@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Receitas Web Lab</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <span class="logo">Julia Damo</span>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="../paginas/index.html">Home</a></li>
+                    <li><a href="../paginas/about.html">Sobre Mim</a></li>
+                    <li><a href="../paginas/curriculum.html">Currículo</a></li>
+                    <li><a href="../paginas/contact.html">Contato</a></li>
+                    <li><a href="../paginas/receita.html" class="active">Receitas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <a href="../paginas/receita.html">
+        <h2 class="receitascaseiras">
+        <span class="seta-voltar">&LeftArrow;</span> Receitas Caseiras
+        </h2>
+        </a>
+        <section id="receita">
+            <header>
+                <h1>Chocolate Quente Cremoso</h1>
+                <p>Uma bebida fácil de fazer, perfeita para dias frios.</p>
+            </header>
+            <img src="../assets/cholocatequente.jpeg" alt="Imagem de um chocolate quente cremoso" class="recipe-img" style="width: 100%; border-radius: 8px; margin: 10px 0;">
+            <div>
+                <h2>Ingredientes <small>(4 porções)</small></h2>
+            </div>
+            <ul>
+                <li>2 xícaras (chá) de leite</li>
+                <li>1 colher (sopa) de amido de milho</li>
+                <li>3 colheres (sopa) de chocolate em pó</li>
+                <li>4 colheres (sopa) de açúcar</li>
+                <li>1 canela em pau</li>
+                <li>1 caixinha de creme de leite</li>
+            </ul>
+
+            <h2>Modo de preparo</h2>
+            <ol>
+                <li>Em um liquidificador, bata o leite, o amido de milho, o chocolate em pó e o açúcar.</li>
+                <li>Despeje a mistura em uma panela com a canela e leve ao fogo baixo, <i>mexendo sempre até ferver</i>.
+                </li>
+                <li>Desligue o fogo, adicione o creme de leite e mexa bem até obter uma <b>mistura homogênea</b>.</li>
+                <li>Retire a canela em pau e sirva quente!</li>
+            </ol>
+
+            <footer>
+                <q>Receita muito deliciosa, experimente!</q>
+                <p>- Julia Damo</p>
+            </footer>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Web Lab - UPF - ITEC</p>
+    </footer>
+
+    <div class="controles-acessibilidade">
+            <button id="btnAumentar" title="Aumentar Letra"><span class="material-icons">zoom_in</span></button>
+            <button id="btnDiminuir" title="Diminuir Letra"><span class="material-icons">zoom_out</span></button>
+            <button id="btnTheme" title="Alternar Tema"><span class="material-icons">dark_mode</span></button>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

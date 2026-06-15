@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Receitas Web Lab</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <span class="logo">Julia Damo</span>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="../paginas/index.html">Home</a></li>
+                    <li><a href="../paginas/about.html">Sobre Mim</a></li>
+                    <li><a href="../paginas/curriculum.html">Currículo</a></li>
+                    <li><a href="../paginas/contact.html">Contato</a></li>
+                    <li><a href="../paginas/receita.html" class="active">Receitas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <a href="../paginas/receita.html">
+        <h2 class="receitascaseiras">
+        <span class="seta-voltar">&LeftArrow;</span> Receitas Caseiras
+        </h2>
+        </a>
+        <section id="receita">
+            <header>
+                <h1>Mousse de Maracujá</h1>
+                <cite>Web Lab - 2025/1</cite>
+                <p>Uma sobremesa deliciosa e fácil de fazer</p>
+            </header>
+            
+            <img src="../assets/mousse.jpeg" alt="Imagem de um mousse de maracujá" class="recipe-img" style="width: 100%; border-radius: 8px; margin: 10px 0;">
+
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>1 lata de leite condensado</li>
+                <li>1 lata de creme de leite</li>
+                <li>1 lata de suco de maracujá concentrado</li>
+                <li>1/2 xícara de H<sup>2</sup>O</li>
+            </ul>
+
+            <h2>Modo de preparo</h2>
+            <ol>
+                <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma
+                    mistura homogênea.</li>
+                <li><i>Se estiver muito densa,</i> adicione mais água e bata por mais <b>alguns segundos.</b></li>
+                <li>Despeje o mousse em taças individuais e leve à geladeira por cerca de 4 horas ou até que esteja
+                    firme.</li>
+                <li>Sirva gelado e bom apetite!</li>
+            </ol>
+
+            <footer>
+                <q>Receita muito boa, eu recomendo.</q>
+                <p>- Prof. Pablo Leon Rodrigues</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Web Lab - UPF - ITEC</p>
+    </footer>
+
+    <div class="controles-acessibilidade">
+            <button id="btnAumentar" title="Aumentar Letra"><span class="material-icons">zoom_in</span></button>
+            <button id="btnDiminuir" title="Diminuir Letra"><span class="material-icons">zoom_out</span></button>
+            <button id="btnTheme" title="Alternar Tema"><span class="material-icons">dark_mode</span></button>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

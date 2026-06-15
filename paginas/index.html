@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Home</title>
+    
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <span class="logo">Julia Damo</span>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html" ">Sobre Mim</a></li>
+                    <li><a href="curriculum.html">Currículo</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="receita.html">Receitas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="introducao">
+            <h2>Bem-vindo ao meu Blog!</h2>
+            <p>Este é um espaço dedicado a compartilhar minhas experiências, aprendizados acadêmicos, trajetórias
+                profissionais e algumas das minhas receitas!</p>
+        </section>
+        <hr>
+        <section class="secao-posts">
+            <h2>Últimas Postagens</h2>
+            <div class="cards">
+                <div class="card-post">
+                    <h3>Minha jornada no desenvolvimento Web</h3>
+                    <p class="publicacao">
+                        Publicado em: 17 de Maio de 2026
+                    </p>
+
+                    <p>
+                        Nesta postagem, conto um pouco sobre como tem sido a experiência de vida
+                    </p>
+
+                    <a href="../paginas/about.html" style="color: #6a3f9d; font-weight: 600; text-decoration: none;">
+                        Leia mais sobre mim &rarr;
+                    </a>
+                </div>
+
+                <div class="card-post">
+                    <h3>Nova receita no blog: Chocolate Quente Cremoso</h3>
+
+                    <p class="publicacao">
+                        Publicado em: 15 de Maio de 2026
+                    </p>
+
+                    <p>
+                        Se você gosta de uma sobremesa rápida, prática e deliciosa,
+                        não pode deixar de conferir o passo a passo estruturado da
+                        minha receita favorita de chocolate quente!
+                    </p>
+
+                    <a href="../receitas/chocolatequente.html" style="color: #6a3f9d; font-weight: 600; text-decoration: none;">
+                        Ver receita completa &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Web Lab - UPF - ITEC</p>
+    </footer>
+
+    <div class="controles-acessibilidade">
+            <button id="btnAumentar" title="Aumentar Letra"><span class="material-icons">zoom_in</span></button>
+            <button id="btnDiminuir" title="Diminuir Letra"><span class="material-icons">zoom_out</span></button>
+            <button id="btnTheme" title="Alternar Tema"><span class="material-icons">dark_mode</span></button>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

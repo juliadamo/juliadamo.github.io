@@ -1,0 +1,204 @@
+
+.listas-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5625rem; 
+  margin-top: var(--espaco-md);
+}
+
+.lista-item {
+  background: var(--cor-card);
+  padding: 1.5625rem; 
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid #f0e6da; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lista-item h3 {
+  font-size: var(--texto-xl);
+  color: var(--cor-titulo);
+  margin-bottom: 0.625rem;
+  border-bottom: 2px solid var(--cor-fundo); 
+  padding-bottom: var(--espaco-xs);
+}
+
+.lista-item p {
+  color: var(--cor-texto-medio);
+  font-size: var(--texto-base);
+  margin-bottom: 0.625rem;
+}
+
+
+.recipe-img {
+  width: 100%;
+  height: 13.75rem; 
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin: var(--espaco-sm) 0;
+  box-shadow: 0 2px 8px rgba(74, 40, 116, 0.05); 
+}
+
+.lista-item blockquote {
+  background: var(--cor-fundo-input);
+  padding: 0.625rem 0.9375rem; 
+  border-left: 3px solid var(--cor-primaria); 
+  margin: 0.625rem 0; /* 10px */
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.lista-item q {
+  font-style: italic;
+  color: var(--cor-texto-suave);
+}
+
+.lista-item em {
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-muted);
+  display: block;
+  margin-top: 0.3125rem; 
+}
+
+.lista-item a {
+  display: inline-block;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 0.9375rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.lista-item a:hover {
+  color: var(--cor-primaria-escura);
+  text-decoration: underline;
+  transform: translateX(0.1875rem);
+}
+
+.pagina-receita .titulo-pagina {
+  text-align: center;
+  color: var(--cor-subtitulo);
+  font-size: 2.1875rem;
+  margin: var(--espaco-lg) 0 0.625rem 0; 
+}
+
+#receita {
+  max-width: 43.75rem; 
+  margin: var(--espaco-xl) auto;
+  padding: 2.1875rem; 
+  background-color: var(--cor-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--sombra-forte);
+}
+
+#receita header {
+  text-align: center;
+  border-bottom: 2px solid var(--cor-fundo); 
+  padding-bottom: var(--espaco-md);
+  margin-bottom: 1.5625rem; 
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#receita header h1 {
+  color: var(--cor-subtitulo);
+  font-size: 2rem; 
+  margin: 0 0 var(--espaco-xs) 0;
+}
+
+#receita header p {
+  color: var(--cor-texto-suave);
+  font-style: italic;
+  margin: 0;
+  font-size: var(--texto-md);
+}
+
+#receita h2 {
+  color: var(--cor-subtitulo);
+  font-size: var(--texto-xl);
+  margin-top: var(--espaco-lg);
+  margin-bottom: 0.9375rem; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#receita h2 small {
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-suave);
+  margin-left: 0.625rem;
+  font-weight: normal;
+}
+
+#receita ul,
+#receita ol {
+  padding-left: 1.5625rem;
+  color: var(--cor-texto-suave);
+}
+
+#receita li {
+  margin-bottom: var(--espaco-sm);
+  line-height: 1.6;
+  font-size: var(--texto-md);
+}
+
+#receita li b {
+  color: var(--cor-subtitulo);
+}
+
+#receita footer {
+  margin-top: var(--espaco-xl);
+  padding-top: var(--espaco-md);
+  border-top: 1px dashed #dcd5e4; 
+  text-align: center;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+#receita footer q {
+  font-style: italic;
+  color: var(--cor-subtitulo);
+  font-size: 1.0625rem; 
+  display: block;
+  margin-bottom: 0.3125rem; 
+}
+
+#receita footer p {
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-sm);
+  margin: 0;
+}
+
+.receitascaseiras {
+  color: var(--cor-subtitulo);
+  font-size: var(--texto-xl);
+  margin-top: var(--espaco-lg);
+  margin-bottom: 0.9375rem; 
+  display: flex;
+  align-items: center;
+}
+
+.receitascaseiras .seta-voltar {
+  margin-right: 0.9375rem;
+  margin-left: var(--espaco-md);
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.receitascaseiras:hover .seta-voltar {
+  transform: translateX(-0.125rem);
+}
+
+main > a {
+  text-decoration: none;
+}
+
+@media (max-width: 48rem) { 
+  .listas-section {
+    grid-template-columns: 1fr;
+  }
+}

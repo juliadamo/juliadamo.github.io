@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <span class="logo">Julia Damo</span>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="curriculum.html">Currículo</a></li>
+                    <li><a href="contact.html" class="active">Contato</a></li>
+                    <li><a href="receita.html">Receitas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section class="Formulário de Contato">
+            <h2>Entre em Contato Comigo!</h2>
+            <form id="contato">
+                <div class="Nome Completo">
+                    <label for="name">Nome Completo:</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="Email">
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="Sua Mensagem">
+                    <label for="message">Sua Mensagem:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                <p id="form-feedback" class="form-feedback"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Web Lab - UPF - ITEC</p>
+    </footer>
+
+    <div class="controles-acessibilidade">
+            <button id="btnAumentar" title="Aumentar Letra"><span class="material-icons">zoom_in</span></button>
+            <button id="btnDiminuir" title="Diminuir Letra"><span class="material-icons">zoom_out</span></button>
+            <button id="btnTheme" title="Alternar Tema"><span class="material-icons">dark_mode</span></button>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+</html>

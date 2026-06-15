@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('index.css');
+@import url('about.css');
+@import url('curriculum.css');
+@import url('contact.css');
+@import url('receita.css');
+
+:root {
+  --cor-primaria:        #6a3f9d; 
+  --cor-primaria-escura: #53307d; 
+  --cor-titulo:          #4a2874; 
+  --cor-subtitulo:       #5d3b87; 
+  --cor-accent-claro:    #e5daf2; 
+
+  --cor-fundo:           #eadcc9; 
+  --cor-borda:           #ebd9c5; 
+  --cor-fundo-input:     #faf6f0; 
+  --cor-card:            #ffffff; 
+
+  --cor-texto:           #2d2a26; 
+  --cor-texto-medio:     #443e38; 
+  --cor-texto-suave:     #61564d; 
+  --cor-texto-muted:     #8c827a; 
+  --cor-nav:             #5c534c; 
+
+  --cor-status-cursando: #6a3f9d;
+  --cor-status-formado:  #2e592a;
+
+  --fonte-principal: 'Poppins', sans-serif;
+
+  --texto-xs:   0.8125rem;
+  --texto-sm:   0.875rem;  
+  --texto-base: 0.9375rem; 
+  --texto-md:   1rem;      
+  --texto-lg:   1.125rem; 
+  --texto-xl:   1.375rem;
+  --texto-2xl:  1.625rem;  
+  --texto-3xl:  1.875rem;  
+  --texto-4xl:  2.25rem;  
+
+  --espaco-xs:  0.5rem;    
+  --espaco-sm:  0.75rem;  
+  --espaco-md:  1.25rem;  
+  --espaco-lg:  1.875rem;  
+  --espaco-xl:  2.5rem; 
+  --espaco-2xl: 5rem;     
+
+  --radius-sm:  6px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+
+  --sombra-card:   0 4px 20px rgba(74, 40, 116, 0.04);
+  --sombra-forte:  0 10px 30px rgba(75, 44, 110, 0.08);
+}
+
+body.dark-mode {
+  --cor-primaria:        #a57cd6; 
+  --cor-primaria-escura: #bc9be0; 
+  --cor-titulo:          #e1daf2;
+  --cor-subtitulo:       #c7b3e5;
+  --cor-accent-claro:    #3d2854;
+
+  --cor-fundo:           #1a1715; 
+  --cor-borda:           #2d2722;
+  --cor-fundo-input:     #24201c; 
+  --cor-card:            #201c19;
+
+  --cor-texto:           #f4f1ed; 
+  --cor-texto-medio:     #e4ded5;
+  --cor-texto-suave:     #b8ada3; 
+  --cor-texto-muted:     #8a7f75; 
+  --cor-nav:             #cdc3b8; 
+
+  --cor-status-cursando: #a57cd6; 
+  --cor-status-formado:  #529c4b; 
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background: var(--cor-fundo);
+  background: linear-gradient(180deg, var(--cor-fundo) 0%, var(--cor-accent-claro) 50%, var(--cor-fundo) 100%);
+  background-attachment: scroll;
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cor-fundo);
+  padding: 15px 5%;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2.1875rem;
+  font-weight: 700;
+  color: var(--cor-titulo);
+}
+
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: var(--cor-nav);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu-principal a:hover,
+.menu-principal a.active {
+  color: var(--cor-primaria);
+}
+
+.controles-acessibilidade {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  display: flex;
+  flex-direction: column; 
+  gap: var(--espaco-xs); 
+  z-index: 9999; 
+}
+
+.controles-acessibilidade button {
+  background: var(--cor-primaria);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem; 
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.3s;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controles-acessibilidade button:hover {
+  background: var(--cor-primaria-escura);
+}
+
+.container {
+  max-width: 56.25rem;
+  margin: var(--espaco-xl) auto;
+  padding: 0 var(--espaco-md);
+}
+
+.container h2 {
+  font-size: var(--texto-3xl);
+  color: var(--cor-titulo);
+  margin-bottom: var(--espaco-lg);
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding: var(--espaco-xl);
+  background-color: var(--cor-fundo);
+  color: var(--cor-nav);
+  margin-top: var(--espaco-2xl);
+  font-size: var(--texto-sm);
+  font-weight: 500;
+}
+
+@media (max-width: 48rem) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
+}
+
